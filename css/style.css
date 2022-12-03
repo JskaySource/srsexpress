@@ -135,15 +135,17 @@ h2{
   .services-block-three{
     margin-bottom: 30px;
   }
+ 
   .services-block-three i {
-      font-size: 32px;
+      font-size: 40px;
   }
   .services-block-three>a {
       display: block;
       border: 2px solid #d5d5d5;
       border-radius: 4px;
       text-align: center;
-      background: #fff;
+      background: #051B81;
+      color: #fff;
       padding: 20px;
       position: relative;
     margin-bottom:30px;
@@ -179,21 +181,22 @@ h2{
       padding-bottom: 15px;
   }
   .services-block-three h4 {
-      color: #6f6f6f;
-      font-size: 14px;
+      color: orangered;
+      font-size: 20px;
       margin-bottom: 10px;
-      font-weight: 600;
+      font-weight: 700;
+      font-style: oblique;
   }
   .services-block-three p {
       margin-bottom: 0;
-    color: #757575;
+    color: #f2f2f2;
   }
   .services-block-three>a:hover {
       opacity: 1;
       border-color: #d5d5d5;
   }
   a:hover, a:active {
-      color: #03a9f5;
+      color: orangered;
       text-decoration: none;
   }
   
@@ -346,6 +349,9 @@ h2{
 .address {
     background: #eee !important;
     border: 1px solid #c5c2c2;
+}
+#srsformsubmit{
+    font-size: 20px;
 }
 
 /* footer section start */
