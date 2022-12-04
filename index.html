@@ -16,40 +16,39 @@
   
 </head>
 <body >
-    <div class="container-fluid"> 
+    <div class="container-fluid sticky-top"> 
         <div id="omega">
             <a href="#" id="logo">SRS Express</a>
         <div id="omega-content">
-            <nav>
+            <nav>  
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Career</a></li>
-                    <li><a href="#">Activities</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#delivery">Process</a></li>
+                    <li><a href="#area">Coverage Area</a></li>
+                    <li><a href="#teams">Team</a></li>
+                    <li><a href="#">Career</a></li>                    
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="omega-links">               
                 <a href="tel:01690-166156" class="button ">Quick Service</a>
-            </div>
-            
+            </div>            
         </div>
         <button id="omega-button">&#9776;</button>
         <div id="omega-sidebar">
             <div id="omega-sidebar-header"></div>
             <div id="omega-sidebar-body"></div>
         </div>
-        <div id="omega-overlay"></div>
-        
-        
+        <div id="omega-overlay"></div>        
+    </div>
     </div>
 
-    </div>
-
-                 <!-- Full Page Image Background Carousel Header -->
+                                                            <!-- Full Page Image Background Carousel Header -->
 <div class="container-fluid maincover"> 
     <div class="row"> 
+                                                             <!-- Slide in left side cover start here -->
+
         <div class="col-md-7 col-sm-6 srs-slide">
                 <div id="carouselExample" class="carousel slide w-100" data-bs-ride="carousel" data-bs-interval="3000">
                <div class="carousel-indicators">
@@ -88,23 +87,20 @@
                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
                  <span class="visually-hidden">Next</span>
                </button>
-              </div>
-
-            
-        
+              </div> 
         </div>
+                                                 <!-- cover right side code is here -->
         <div class="col-md-5 col-sm-6 "> 
             <div class="coverright"> 
                 <h2> Super Express Service </h2>
                 <h3> <i class="fab fa-whatsapp"></i> <a href="tel: 01690-166156">  01690-166156</a></h3>
-            </div>
-                
+            </div>                
         </div>
     </div>
 </div>
 
- <!-- Service Card section Start-->
-<section class="service pb-5"> 
+                                                 <!-- Service Card section Start-->
+<section id="service" class="service pb-5" > 
     <div class="container">
         <h2> Our Service</h2> 
         <div class="row"> 
@@ -142,9 +138,9 @@
     </div>
 </section>
  
- <!-- Delivery section Start-->
+                                                <!-- Delivery section Start-->
 
-<section class="pt-5 pb-5">
+<section id="delivery" class="pt-5 pb-5">
     <div class="container">
       <div class="row text-center mb-2">
         <h2>Our Delivery Process</h2>
@@ -226,12 +222,9 @@
 
   <!-- Service Card section end-->
 
+  <!--  Service Area Start-->
 
-
-
-  <!--    Tab Panel for  Service Area Start-->
-
-  <section class="serviceArea pb-5">    
+  <section id="area" class="serviceArea pb-5">    
   <div class="container"> 
     <h2> Service Area</h2>
     <div class="row "> 
@@ -321,8 +314,19 @@
   </div>
 </section>
 
+<!-- Career Section Start-->
 
-<section class="team"> 
+<div class="container-fluid"> 
+    <div class="row "> 
+        <div class="col-md-12 col-sm-12 col-xl-12">
+            <img  src="img/srsexpress.jpg" alt=""> 
+             
+             
+        </div>
+    </div>
+</div>
+
+<section id="teams" class="team"> 
 
     <section class="team section">
         <div class="container">
@@ -391,22 +395,106 @@
 
 </section>
 
+                                                <!-- Jessor Slide is Start Here -->
 
-
-<!-- Career Section Start-->
-
-<div class="container-fluid"> 
-    <div class="row "> 
-        <div class="col-md-12 col-sm-12 col-xl-12">
-            <img  src="img/srsexpress.jpg" alt=""> 
-             
-             
+<section> 
+    <div class="container-fluid srs_slid"> 
+        <h2> Our Valued Clint</h2>
+        <div class="row "> 
+            <script src="js/jquery-3.5.1.min.js"></script>
+            <script src="js/jssor.slider.min.js"></script> 
+                <script type="text/javascript">
+                    jQuery(document).ready(function ($) {
+            
+                        var jssor_1_options = {
+                          $AutoPlay: 1,
+                          $Idle: 0,
+                          $SlideDuration: 5000,
+                          $SlideEasing: $Jease$.$Linear,
+                          $PauseOnHover: 4,
+                          $SlideWidth: 180,
+                          $Cols: 7
+                        };
+            
+                        var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+            
+                        /*#region responsive code begin*/
+            
+                        // var MAX_WIDTH = 1920;
+                        // var MIN_WiDTH =720;
+            
+                        // function ScaleSlider() {
+                        //     var containerElement = jssor_1_slider.$Elmt.parentNode;
+                        //     var containerWidth = containerElement.clientWidth;
+            
+                        //     if (containerWidth) {
+            
+                        //         var expectedWidth = Math.min(MIN_WiDTH || containerWidth, containerWidth);
+            
+                        //         jssor_1_slider.$ScaleWidth(expectedWidth);
+                        //     }
+                        //     else {
+                        //         window.setTimeout(ScaleSlider, 30);
+                        //     }
+                        // }
+            
+                        ScaleSlider();
+            
+                        $(window).bind("load", ScaleSlider);
+                        $(window).bind("resize", ScaleSlider);
+                        $(window).bind("orientationchange", ScaleSlider);
+                        /*#endregion responsive code end*/
+                    });
+                </script>
+            
+                <div id="jssor_1">
+                    <div data-u="slides" class="srsslide">
+                        <div>
+                            <img data-u="image" src="img/slider/bata.png" />
+                        </div>
+                        <div>
+                            <img data-u="image" src="img/slider/cake.png" />
+                        </div>
+                        <div>
+                            <img data-u="image" src="img/slider/daraz.png" />
+                        </div>
+                        <div>
+                            <img data-u="image" src="img/slider/bata.png" />
+                        </div>
+                        <div>
+                            <img data-u="image" src="img/slider/p.png" />
+                        </div>
+                        <div>
+                            <img data-u="image" src="img/slider/x.png" />
+                        </div>
+                        <div>
+                            <img data-u="image" src="img/slider/foodpanda.png" />
+                        </div>
+                        <div>
+                            <img data-u="image" src="img/slider/bata.png" />
+                        </div>
+                        <div>
+                            <img data-u="image" src="img/slider/001.jpg" />
+                        </div>
+                        <div>
+                            <img data-u="image" src="img/slider/r.png" />
+                        </div>
+                        <div>
+                            <img data-u="image" src="img/slider/foodpanda.png" />
+                        </div>           
+                    </div>
+                </div>
+        
+        
+        
         </div>
     </div>
-</div>
 
 
-<!-- Contact form start Here -->
+</section>
+
+
+                                                            <!-- Contact form start Here -->
 <section id="contact"> 
     <div class="container">
         <div class="row text-center mb-5">
@@ -467,6 +555,7 @@
 
 </section>
 
+
 <!-- Footer -->
 <footer class="text-light">
     <div class="container">
@@ -522,10 +611,10 @@
 
 <script src="js/jquery-3.5.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
 <script src="js/omega.js"></script>
- <!--  this is for particles js  -->
  
 <script src="js/srsscript.js"></script>
  <script src="js/aos.js"></script>

@@ -331,6 +331,38 @@ h2{
 }
 
 
+/* jessor slide  */
+.srs_slid{
+    background: #051B81;
+    padding-bottom: 20px;
+}
+
+#jssor_1{
+    position:relative;
+    margin:0 auto;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:120px;
+    overflow:hidden;
+    visibility:hidden;
+}
+
+
+.srsslide{
+    cursor:default;
+    position:relative;
+    top:0px;left:0px;
+    width:100%;
+    height:120px;
+    overflow:hidden;
+ }
+ .srsslide img{
+    width:400px;
+    background: gainsboro;
+    margin: 10px;
+ }
+
 
 /* contact section start */
 #contact{
