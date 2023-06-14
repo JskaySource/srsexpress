@@ -27,9 +27,9 @@ h1.title{
 h2{
     font-family: 'Luckiest Guy', cursive;
     font-size: 40px; 
-    color:orangered ;
-    padding-top: 30px;
-   
+    color:black ;
+    font-weight: 900;
+    padding-top: 30px;   
     text-align: center;
   
   }
@@ -51,7 +51,6 @@ h2{
 
     padding-top: 2px;
     padding-bottom: 2px;
-    background-image: linear-gradient(to left, #6a11cb 0%, #2575fc 100%);
     
 
 }
@@ -64,7 +63,14 @@ h2{
 
   .carousel-caption{
     text-align: left;
-    color: #000000 !important;
+  }
+  .carousel-caption h3{
+    color: red;
+  }
+  .carousel-caption h3 span{
+    background-color: #000000;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .maincover button{
     margin-top: 30%;
@@ -75,20 +81,17 @@ h2{
    
 }
 .coverright{
-   background: #051B81;
-   margin-top: 20%;
    text-align: center;
    color: orangered;
-   padding: 20px;
-   box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
-}
-
-.coverright h2{
-    color: #fff;
-    font-size: 35px;
-}
+   
+   margin: 10px;
+   padding: 10px;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  }
 .coverright h3{
     font-size: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight:800;
 }
 .coverright h3 a:hover{
     color: orangered !important ;
@@ -96,16 +99,25 @@ h2{
 
 
 
-/*  this is only for particles js   end */
+
 
 
 .service{
-    background: #051B81;  
+    background-image: url(../img/serivice2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+}
+#service h2{
+    font-weight: 900;
+    font-size: 5.5rem;
 }
 .card{
     padding: 10px;
     margin: 10px;
-    background: #051B81;
+background: none;
     border: none;
     
 }
@@ -116,7 +128,7 @@ h2{
     box-shadow: rgba(2, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 .card img:hover{
-   opacity: 0.5;
+   opacity: 0.8;
 }
 .card-title{
     font-weight: 900;
@@ -129,9 +141,57 @@ h2{
 }
 
 
-/* this is for service card section start      */
+
+  /* count project start=====================   */
+  .pscore{
+    background-image: url(../bg4.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    padding-bottom: 50px;
+    padding-top: 30px;
+  }
+  
+  /* ####################### */
+  .single_box{
+      height: 180px;
+      background: rgb(241, 241, 241);
+      overflow: hidden;
+      border-radius: 10px;
+      transition: .6s;
+    position: relative;
+    margin-bottom: 2px;
+    box-shadow: 3px 5px 5px 0px #05a5b1;
+  }
+  .single_box .content_box{
+      position: absolute;
+      width: 100%;
+    height: 60%;
+    font-weight: 800;
+      padding: 50px;
+      box-sizing: border-box;
+      text-align: center;
+      transition: 0.6s;
+  }
+  .single_box .content_box:hover{
+    color: #05a5b1;
+    transition: 0.5s ease-in;
+  }
+  .single_box .content_box h4{
+    font-weight: 600;
+  
+  }
+  
 
 
+
+/* this is for delivery card section start      */
+
+#delivery{
+    background: rgb(214, 211, 211);
+}
   .services-block-three{
     margin-bottom: 30px;
   }
@@ -144,7 +204,7 @@ h2{
       border: 2px solid #d5d5d5;
       border-radius: 4px;
       text-align: center;
-      background: #051B81;
+      background: #0577a0;
       color: #fff;
       padding: 20px;
       position: relative;
@@ -159,8 +219,8 @@ h2{
       position: absolute;
       bottom: -2px;
       right: -2px;
-      border-bottom: 2px solid red;
-      border-right: 2px solid red;
+      border-bottom: 3px solid red;
+      border-right: 3px solid red;
       transition: all 0.5s ease 0s;
       -webkit-transition: all 0.5s ease 0s;
   }
@@ -172,16 +232,21 @@ h2{
       position: absolute;
       top: -2px;
       left: -2px;
-      border-top: 2px solid #03a9f5;
-      border-left: 2px solid #03a9f5;
+      border-top: 3px solid #030303;
+      border-left: 3px solid #030303;
       transition: all 0.5s ease 0s;
       -webkit-transition: all 0.5s ease 0s;
   }
+
+  /* delivery process icon changer */
+  #delivery .svg-inline--fa {
+    height: 2.5em;  
+}
   .padding-15px-bottom {
       padding-bottom: 15px;
   }
   .services-block-three h4 {
-      color: orangered;
+      color: #030303;
       font-size: 20px;
       margin-bottom: 10px;
       font-weight: 700;
@@ -190,6 +255,8 @@ h2{
   .services-block-three p {
       margin-bottom: 0;
     color: #f2f2f2;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 17px;
   }
   .services-block-three>a:hover {
       opacity: 1;
@@ -199,6 +266,7 @@ h2{
       color: orangered;
       text-decoration: none;
   }
+
   
   .services-block-three>a:hover:before, .services-block-three>a:hover:after {
       width: 95%;
@@ -211,23 +279,33 @@ h2{
 
 
 .serviceArea{
-    background: #051B81;
-    color: #f2f2f2;
-    padding:15px;
-    
+    background: #0577a0;
+    color: black;
+    font-weight: 600;
+    padding:15px;    
+}
+.serviceArea button{
+    color: #000000;
+    font-weight: 600;        
 }
 
 .subservice img{
     position: static;
     margin: 10px;
-    height: 400px;
-    width: 80%;
-    border: 2px solid #051B81 ;
+    height: 300px;
+    width: 70%;
+    border: 2px solid #051B81;
+    background-color: #fdfdfd;
     box-shadow: rgba(12, 6, 6, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
-.serviceplase li:hover{
-    color:red;
-    font-size: 17px;
+.serviceplace li {
+    list-style: none;
+
+}
+.serviceplace li:hover{
+    color:#eee;
+    /* font-size: 17px; */
+
 
 }
 /* team section */
@@ -333,7 +411,7 @@ h2{
 
 /* jessor slide  */
 .srs_slid{
-    background: #051B81;
+    background: #0577a0;
     padding-bottom: 20px;
 }
 
@@ -366,7 +444,7 @@ h2{
 
 /* contact section start */
 #contact{
-    background-image: url("../img/bg.jpg");
+    background-image: url("../img/gif/service.jpg");
     padding: 20px;
     background-attachment: fixed;
   background-position: center;
@@ -386,6 +464,73 @@ h2{
     font-size: 20px;
 }
 
+
+
+
+/* testimonial */
+.client {
+    width: 100%;
+    height: 100%;
+    background: #7F00FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.carousel-icon i {
+  font-size: 5rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.carousel-item i {
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.t-card {
+  padding: 1.8125rem 1.125rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 1.25rem;
+  color: #fff;
+  /* height: auto; */
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 1.5625rem solid transparent;
+  border-right: 1.5625rem solid transparent;
+  border-top: 1.25rem solid rgba(0, 0, 0, 0.5);
+}
+
+.testimonial-img img{
+    height: 120px !important;
+    border-radius: 90% !important;
+    width: 150px !important;
+    padding-top: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* footer section start */
 footer {
     background: #051B81;
@@ -398,3 +543,113 @@ footer a:hover {
     color:orangered;
    }
 
+
+
+  /* ================================== this css for about us page ========================== */
+
+
+  #about-us{
+        background-image: url("../about1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        width: 100%;
+        color: #fff;
+        padding-top: 40px;
+        padding-bottom: 40px;
+     
+    }
+.about-top{
+        text-align: center;
+    }
+.about-top h2{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 900;
+        margin-bottom: 20px;
+        color: #eee;
+      }
+.about-top h5 a{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #0577a0;
+        font-size: 18px;
+        font-weight: 500;
+      }
+.about-top h5 a:hover{
+        text-decoration: underline;
+      }
+#about-body{
+    color: #030303;
+
+      }
+.about-heading{
+    text-align: center;
+    padding: 15px;
+}
+.about-content{
+    /* background-image: url("../bg21.jpg"); */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        width: 100%;
+}
+.about-content h2{
+    text-align:left ;
+}
+.about-content .card{
+    background-color: #fcf8f8c7;
+    
+}
+.about-content .card-title{
+    color: #030303;
+
+   
+}
+.about-content .card:hover{
+    background-color: #c5c2c2;
+    color: #030303 !important;
+}
+.about-content span{
+    margin-right: 10px;
+}
+.our-history{
+    margin: 30px;
+}
+.our-history h3{
+    text-align: center;
+}
+.our-history span{
+    background-color: #05a5b1;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: black;
+    font-weight: 700;
+
+}
+.our-history img{
+    border-radius: 20px;
+    -webkit-filter: drop-shadow(5px 5px 5px #222 );
+  filter: drop-shadow(5px 5px 5px #222);
+}
+.vision{
+    margin: 20px;
+    text-align: center;
+    color: #030303;
+}
+
+/* For Awards Image Gallry */
+.awards-gallery{
+    border: 1px solid #ccc;
+    margin: 5px;
+}
+.awards-gallery img{
+    height: 250px;
+}
+.awards-gallery:hover{
+    border: 1px solid #777;
+}
+.awards-gallery .caption{
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin-top: 10px;
+}
